@@ -1,0 +1,32 @@
+<idea-plugin>
+    <id>com.pa.plugin</id>
+    <name>Swagger2html</name>
+    <version>1.0</version>
+    <vendor email="302560690@qq.com" url="">pa</vendor>
+
+    <description>
+        导出接口文档
+    </description>
+
+    <change-notes/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="Swagger2html.ID" class="com.pa.plugin.MainAction" text="swagger2html" description="导出接口文档">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
